@@ -21,15 +21,60 @@
       </div>
       <h1 class="header-title">화섬 아파트 지구家 입주민들</h1>
     </header>
-    <p>화섬 아파트에 입주한 입주민들입니다.</br>
+    <p class="subtitle">화섬 아파트에 입주한 입주민들입니다.</br>
     같이 화성에 가는날을 기다리며 화목하게 지내봐요!</p>
-    <div></div>
+    <div class="search-cont">
+        <input type="text" class="search-bar" placeholder="검색">
+        <button class="search-btn"></button>
+    </div>
     <main>
-      <section>
-        <h2>입주민들</h2>
+      <section class="user-section">
+        <div class="user-header-cont">
+            <div class="user-title-cont">
+                <h2 class="user-title">입주민들</h2>
+            </div>
+            <button class="filter-btn"></button>
+        </div>
+        <div class="bottom-border"></div>
         <ul>
-          <li></li>
+          <li class="user-list">
+            <img src="./assets/user-list/chacha-profile.png" alt="profile" class="user-profile">
+            <div class="user-list-content">
+                <div class="user-list-main">
+                    <span class="user-name">차차</span>
+                    <div class="user-apart">지구家 아파트 <span>15</span>개</div>
+                </div>
+                <div class="user-list-id">
+                    <div class="id-je">
+                        <img src="./assets/je-icon.png" alt="je-icon">
+                        <span class="id-je-txt">차차</span>
+                    </div>
+                    <div class="id-o">
+                        <img src="./assets/o-icon.png" alt="o-icon">
+                        <span class="id-o-txt">hyerincha</span>
+                    </div>
+                </div>
+            </div>
+          </li>
         </ul>
+        <div class="pagination-btns">
+            <button type="button" class="pagination-btn">
+                <img src="./assets/the-most-prev-icon.png" alt="">
+            </button>
+            <button type="button" class="pagination-btn">
+                <img src="./assets/prev-icon.png" alt="" class="prev-icon">
+            </button>
+            <button type="button" class="pagination-btn">1</button>
+            <button type="button" class="pagination-btn center-btn">2</button>
+            <button type="button" class="pagination-btn">3</button>
+            <button type="button" class="pagination-btn">
+                <img src="./assets/next-icon.png" alt="" class="next-icon">
+            </button>
+            <button type="button" class="pagination-btn">
+                <img src="./assets/the-most-next-icon.png" alt="" >
+            </button>
+            
+        </div>
       </section>
     </main>
   </body>

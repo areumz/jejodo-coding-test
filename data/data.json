@@ -2,101 +2,121 @@
   {
     "nickname": "차차",
     "oname": "hyerincha",
-    "building_count": 15
+    "building_count": 15,
+    "profile": "../assets/user-list/chacha-profile.png"
   },
   {
     "nickname": "공인즙개사",
     "oname": "jeup",
-    "building_count": 9
+    "building_count": 9,
+    "profile": "../assets/user-list/jeup-profile.png"
   },
   {
     "nickname": "AI",
     "oname": "AI",
-    "building_count": 8
+    "building_count": 8,
+    "profile": "../assets/user-list/ai-profile.png"
   },
   {
     "nickname": "소잃고뇌약간고침",
     "oname": "외양간주인",
-    "building_count": 7
+    "building_count": 7,
+    "profile": "../assets/user-list/cow-profile.png"
   },
   {
     "nickname": "성희",
     "oname": "성희",
-    "building_count": 6
+    "building_count": 6,
+    "profile": "../assets/user-list/sunghee-profile.png"
   },
   {
     "nickname": "목하",
     "oname": "목하",
-    "building_count": 5
+    "building_count": 5,
+    "profile": "../assets/user-list/mokha-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 5
+    "building_count": 5,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 4
+    "building_count": 4,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 3
+    "building_count": 3,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 2
+    "building_count": 2,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 1
+    "building_count": 1,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 0
+    "building_count": 0,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 10
+    "building_count": 10,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 11
+    "building_count": 11,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 12
+    "building_count": 12,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 13
+    "building_count": 13,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 14
+    "building_count": 14,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 15
+    "building_count": 15,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 16
+    "building_count": 16,
+    "profile": "../assets/user-list/basic-profile.png"
   },
   {
     "nickname": "이름",
     "oname": "이름",
-    "building_count": 1
+    "building_count": 1,
+    "profile": "../assets/user-list/basic-profile.png"
   }
 ]
