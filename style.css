@@ -1,0 +1,199 @@
+/* global style */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* body */
+
+.header-bg {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 30rem;
+  background: url(/assets/banner_pattern.png) no-repeat center / cover;
+}
+
+.header-bg .header-char {
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  background: url(/assets/banner_char.png) no-repeat center/ cover;
+}
+
+.header-title {
+  display: block;
+  width: 48rem;
+  margin: 4.9rem auto 2rem auto;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.search-cont {
+  display: block;
+  width: 43rem;
+  margin: 4.8rem auto 5.6rem auto;
+  position: relative;
+}
+
+.search-cont .search-bar {
+  width: 40rem;
+  height: 3.2rem;
+  padding: 0.2rem 0 0.2rem 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #000;
+  color: #999;
+  background: #fff;
+}
+
+.search-cont .search-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: url(/assets/search-icon.png) no-repeat center / cover;
+  cursor: pointer;
+}
+
+.user-section {
+  width: 56rem;
+  margin: 0 auto;
+}
+
+.user-header-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-header-cont .filter-btn {
+  margin-top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/filter-icon.png);
+  cursor: pointer;
+}
+
+.user-header-cont .user-title-cont {
+  width: 11rem;
+  height: 3.2rem;
+  background-color: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user-title-cont .user-title {
+  padding: 0.8rem 0 0 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.bottom-border {
+  width: 56rem;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.user-list {
+  display: flex;
+  margin-top: 2.4rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.user-list .user-profile {
+  margin: 1.7rem 2rem 1.7rem 2.4rem;
+}
+
+.user-list-content {
+  margin-top: 2rem;
+}
+
+.user-list-content .user-list-main {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.user-list-main .user-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.user-list-main .user-apart {
+  margin-left: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4498f2;
+}
+
+.user-list-content .user-list-id {
+  display: flex;
+}
+
+.user-list-id .id-je {
+  display: flex;
+  width: 4.6rem;
+}
+
+.user-list-id .id-je .id-je-txt {
+  display: inline-block;
+  width: 2.2rem;
+  line-height: 1.6rem;
+  margin-left: 0.4rem;
+}
+
+.user-list-id .id-o {
+  display: flex;
+  width: 4.6rem;
+}
+
+.user-list-id .id-o .id-o-txt {
+  display: inline-block;
+  width: 2.2rem;
+  line-height: 1.6rem;
+  margin-left: 0.4rem;
+}
+
+.pagination-btns {
+  width: 20rem;
+  margin: 4.4rem auto 0 auto;
+  display: flex;
+}
+
+.pagination-btns .pagination-btn {
+  cursor: pointer;
+}
+
+.pagination-btns .center-btn {
+  margin: 0 1.2rem 0 1.2rem;
+}
+
+.pagination-btns .prev-icon {
+  margin: 0 2.4rem 0 1.2rem;
+}
+
+.pagination-btns .next-icon {
+  margin: 0 1.2rem 0 2.4rem;
+}
+
+@media screen and (max-width: 1023px) {
+  /* 타블렛 */
+}
+
+@media screen and (max-width: 767px) {
+  .header-title {
+    width: 34rem;
+    font-size: 2.8rem;
+  }
+}
