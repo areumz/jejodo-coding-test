@@ -15,28 +15,50 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-bg">
+    <div class="header-bg">
         <div class="header-char"></div>
-      </div>
-      <h1 class="header-title">화섬 아파트 지구家 입주민들</h1>
+    </div>
+    <header>
+        <h1 class="header-title">화섬 아파트 지구家 입주민들</h1>
     </header>
     <p class="subtitle">화섬 아파트에 입주한 입주민들입니다.</br>
     같이 화성에 가는날을 기다리며 화목하게 지내봐요!</p>
     <div class="search-cont">
-        <input type="text" class="search-bar" placeholder="검색">
-        <button class="search-btn"></button>
+        <input type="text" id="search-bar-id" class="search-bar" placeholder="검색">
+        <button type="button" id="search-btn-id" class="search-btn"></button>
     </div>
     <main>
       <section class="user-section">
         <div class="user-header-cont">
             <div class="user-title-cont">
                 <h2 class="user-title">입주민들</h2>
+                <span class="user-num"></span>
             </div>
             <button class="filter-btn"></button>
         </div>
         <div class="bottom-border"></div>
-        <ul>
+        <ul class="user-apart-filter">
+                <li class="filter-txt">보유 아파트</li>
+                <button type="button" class="user-apart-btn entire">
+                    <li>전체</li>
+                </button>
+                <button type="button" class="user-apart-btn five">
+                    <li>5개 이상</li>
+                </button>
+                <button type="button" class="user-apart-btn four">
+                    <li>4개</li>
+                </button>
+                <button type="button" class="user-apart-btn three">
+                    <li>3개</li>
+                </button>
+                <button type="button" class="user-apart-btn two">
+                    <li>2개</li>
+                </button>
+                <button type="button" class="user-apart-btn one">
+                    <li>1개</li>
+                </button>
+        </ul>
+        <ul id="user-list-cont" class="user-list-cont">
           <li class="user-list">
             <img src="./assets/user-list/chacha-profile.png" alt="profile" class="user-profile">
             <div class="user-list-content">
@@ -57,6 +79,7 @@
             </div>
           </li>
         </ul>
+        <ul id="user-list-cont-search" class="user-list-cont-search"></ul>
         <div class="pagination-btns">
             <button type="button" class="pagination-btn">
                 <img src="./assets/the-most-prev-icon.png" alt="">
@@ -77,5 +100,6 @@
         </div>
       </section>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>

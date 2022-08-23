@@ -10,8 +10,15 @@ body {
 
 /* body */
 
+header {
+  margin-top: 35rem;
+}
+
 .header-bg {
   width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   overflow-x: hidden;
   height: 30rem;
   background: url(/assets/banner_pattern.png) no-repeat center / cover;
@@ -27,7 +34,7 @@ body {
 .header-title {
   display: block;
   width: 48rem;
-  margin: 4.9rem auto 2rem auto;
+  margin: 0 auto 2rem auto;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -86,6 +93,7 @@ body {
 .user-header-cont .user-title-cont {
   width: 11rem;
   height: 3.2rem;
+  display: flex;
   background-color: #000;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -98,11 +106,49 @@ body {
   color: #fff;
 }
 
+.user-title-cont .user-num {
+  display: inline-block;
+  padding: 0.8rem 0 0 0.8rem;
+  color: #4498f2;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .bottom-border {
   width: 56rem;
   height: 1px;
-  margin: 0 auto;
+  margin: 0 auto 2.7rem auto;
   background-color: #000;
+}
+
+.user-apart-filter {
+  display: none;
+}
+
+.user-apart-filter .filter-txt {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin: 0 3.6rem 0 0.5rem;
+}
+
+.user-apart-filter .user-apart-btn {
+  color: #999;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 2.4rem;
+}
+
+.user-apart-filter .user-apart-btn:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+.user-apart-filter .user-apart-btn.active {
+  border-radius: 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
 }
 
 .user-list {
@@ -130,6 +176,12 @@ body {
   font-weight: 700;
 }
 
+.correct {
+  background-color: #4498f2;
+  opacity: 50%;
+  color: #000;
+}
+
 .user-list-main .user-apart {
   margin-left: 1.2rem;
   font-size: 1.4rem;
@@ -143,24 +195,22 @@ body {
 
 .user-list-id .id-je {
   display: flex;
-  width: 4.6rem;
+  margin-right: 1.6rem;
 }
 
 .user-list-id .id-je .id-je-txt {
   display: inline-block;
-  width: 2.2rem;
   line-height: 1.6rem;
   margin-left: 0.4rem;
 }
 
 .user-list-id .id-o {
   display: flex;
-  width: 4.6rem;
 }
 
 .user-list-id .id-o .id-o-txt {
   display: inline-block;
-  width: 2.2rem;
+  width: 6rem;
   line-height: 1.6rem;
   margin-left: 0.4rem;
 }
