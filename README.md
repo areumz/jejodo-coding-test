@@ -1,7 +1,5 @@
 # jejodo-coding-test
-## 제조도 프론트엔드 개발자 코딩 테스트(과제)  
-> [배포](https://areumz.github.io/jejodo-coding-test/)   
-(gh-pages로 임시 배포해놓아서, 이미지 업로드에 시간이 소요됨)   
+## 제조도 프론트엔드 개발자 코딩 테스트(과제)    
 * 프로젝트 실행방법  
 ```
 git clone https://github.com/areumz/jejodo-coding-test.git
@@ -14,3 +12,6 @@ git clone https://github.com/areumz/jejodo-coding-test.git
 
 * Mobile ver.   
 <img width="300" alt="스크린샷 2022-08-23 오후 5 49 27" src="https://user-images.githubusercontent.com/84116709/186115335-39fce282-3029-48d0-8e47-9a065cb24342.png">  
+
+> [배포](https://areumz.github.io/jejodo-coding-test/)   
+(gh-pages로 임시 배포해놓아서, 이미지 업로드에 시간이 소요됨) 
