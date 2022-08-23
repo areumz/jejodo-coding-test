@@ -237,7 +237,7 @@ header {
 
 .pagination-btns {
   width: 20rem;
-  margin: 4.4rem auto 0 auto;
+  margin: 4.4rem auto 4.4rem auto;
   display: flex;
 }
 

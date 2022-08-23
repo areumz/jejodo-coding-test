@@ -1,12 +1,15 @@
+// fetch로 items 불러오기
 const loadItems = () => {
   return fetch("data/data.json").then((response) => response.json());
 };
 
+// items 보여주기
 const displayItems = (items) => {
   const container = document.querySelector(".user-list-cont");
   container.innerHTML = items.map((item) => createList(item)).join("");
 };
 
+// li 만들기
 const createList = (item) => {
   return `
               <li class="user-list">
@@ -31,6 +34,7 @@ const createList = (item) => {
     `;
 };
 
+// 검색 기능
 function searchUser(items) {
   let searchWord = document.getElementById("search-bar-id").value.toLowerCase();
   let userName = document.querySelectorAll(".user-name");
@@ -70,6 +74,7 @@ function searchUser(items) {
     .join("");
 }
 
+// 검색 함수를 핸들링하는 함수
 function handleEvent(items) {
   let searchBtn = document.getElementById("search-btn-id");
   let autoCont = document.querySelector(".autocomplete-cont");
@@ -79,11 +84,13 @@ function handleEvent(items) {
   });
 }
 
+// 전체 사용자 숫자 계산
 function sumUsers(items) {
   let userNum = document.querySelector(".user-num");
   userNum.innerText = items.length;
 }
 
+// 필터링 버튼 핸들링하는 함수
 function handleFilterBtn() {
   let filterBtn = document.querySelector(".filter-btn");
   filterBtn.addEventListener("click", () => {
@@ -96,6 +103,7 @@ function handleFilterBtn() {
 }
 handleFilterBtn();
 
+// 숫자 필터링 버튼 핸들링하는 함수
 function handleNumBtn(items) {
   let entireBtn = document.getElementsByClassName("user-apart-btn entire");
   let fiveBtn = document.getElementsByClassName("user-apart-btn five");
@@ -218,6 +226,7 @@ function handleNumBtn(items) {
   });
 }
 
+// 자동완성 핸들링하는 함수
 function handleAutoComplete(items) {
   let ul = document.querySelector(".autocomplete-box");
   let container = document.querySelector(".autocomplete-cont");
@@ -238,6 +247,44 @@ function handleAutoComplete(items) {
     }
   });
 }
+
+// 추가로 페이지네이션 기능 해보는중
+
+// let thispage = 1;
+
+// function page(num) {
+//   let items = [];
+//   const start = num * 8 - 8;
+//   const end = num * 8;
+//   fetch("data/data.json")
+//     .then((response) => response.json())
+//     .then((item) => {
+//       for (let i = 0; i < item.length; i++) {
+//         items.push(item[i]);
+//       }
+//     });
+//   console.log(items);
+//   return items.slice(start, end);
+// }
+
+// function renderCard(pageNum) {
+//   const selectedDatas = page(pageNum);
+//   selectedDatas.forEach((data) => {
+//     displayItems(data);
+//   });
+// }
+
+// function renderInitPage() {
+//   const selectedDatas = page(1);
+//   const theMostPrev = document.getElementsByClassName(
+//     "pagination-btn the-most"
+//   );
+//   selectedDatas.forEach((data) => {
+//     displayItems(data);
+//   });
+//   theMostPrev.addEventListener("click", () => renderCard(1));
+// }
+// renderInitPage();
 
 loadItems()
   .then((items) => {
