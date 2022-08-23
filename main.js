@@ -39,7 +39,6 @@ function searchUser(items) {
       return item;
     }
   });
-  console.log(res);
   document.getElementById("user-list-cont").style.display = "none";
   const containerSearch = document.getElementById("user-list-cont-search");
   containerSearch.innerHTML = res
@@ -73,7 +72,9 @@ function searchUser(items) {
 
 function handleEvent(items) {
   let searchBtn = document.getElementById("search-btn-id");
+  let autoCont = document.querySelector(".autocomplete-cont");
   searchBtn.addEventListener("click", () => {
+    autoCont.style.display = "none";
     searchUser(items);
   });
 }
@@ -217,11 +218,33 @@ function handleNumBtn(items) {
   });
 }
 
+function handleAutoComplete(items) {
+  let ul = document.querySelector(".autocomplete-box");
+  let container = document.querySelector(".autocomplete-cont");
+  let searchCont = document.querySelector(".search-cont");
+  let searchInput = document.querySelector(".search-bar");
+  searchInput.addEventListener("keyup", () => {
+    container.style.display = "block";
+    let res = items.filter((item) => {
+      if (item.nickname.toLowerCase().includes(searchInput.value)) {
+        return item;
+      }
+    });
+
+    ul.innerHTML = res.map((item) => createHTML(item)).join("");
+
+    function createHTML(item) {
+      return `<li class="autocomplete-content">${item.nickname}</li>`;
+    }
+  });
+}
+
 loadItems()
   .then((items) => {
     displayItems(items);
     handleEvent(items);
     sumUsers(items);
     handleNumBtn(items);
+    handleAutoComplete(items);
   })
   .catch(console.log);
